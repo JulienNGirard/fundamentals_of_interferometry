@@ -87,7 +87,7 @@ def makecubeplot(u,v,w):
         ax.plot([ub], [vb], [wb], 'w')
 
 def UV(u,v,w):
-    fig=plt.figure()
+    fig=plt.figure(figsize=(8,8))
     ax=fig.add_subplot(111,projection='3d')
     ax.plot(u,v,w,'b')
     ax.plot(-u,-v,-w,'r')
@@ -99,7 +99,7 @@ def UV(u,v,w):
     ax.plot(-u,-v,'r--',zdir='w',zs=w.min())
 
 def UVellipse(u,v,w,a,b,v0):
-    fig=plt.figure(0)
+    fig=plt.figure(0, figsize=(8,8))
     
     e1=Ellipse(xy=np.array([0,v0]),width=2*a,height=2*b,angle=0)
     e2=Ellipse(xy=np.array([0,-v0]),width=2*a,height=2*b,angle=0)
@@ -224,8 +224,8 @@ def plotuv(antennaPos,L,dec,h,Ntimes,lamb):
     for i in range (nbl):
         uv = track_uv(h,B[i, 0], 0., B[i, 1], L, dec, Ntimes)/1e3;
         if uv.max() > maxuv : maxuv=uv.max()
-        plt.plot(uv[:,0], uv[:,1], 'b.',ms=2,alpha=0.5)
-        plt.plot(-uv[:,0], -uv[:,1], 'r.',ms=2,alpha=0.5)
+        plt.plot(uv[:,0], uv[:,1], 'b.',ms=5)#,alpha=0.5)
+        plt.plot(-uv[:,0], -uv[:,1], 'r.',ms=5)#,alpha=0.5)
     plt.xlabel('u (klambda)')
     plt.ylabel('v (klambda)')
     plt.title('uv coverage')

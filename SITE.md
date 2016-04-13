@@ -12,8 +12,8 @@ Lectures run from March 15 to May 20, 2016 from 2:00 - 4:00 (check the outline b
 2. March 17: Radio Science and Positional Astronomy
 	1. Radio Science - G. Jozsa ([pdf](http://jake.ru.ac.za/~foster/nassp2016/lectures/1-RadioScience/fundamentals_science.pdf), [odp](http://jake.ru.ac.za/~foster/nassp2016/lectures/1-RadioScience/fundamentals_science.odp))
 	2. Positional Astronomy - T. Grobler ([pdf](http://jake.ru.ac.za/~foster/nassp2016/lectures/3-PositionalAstronomy/Positional%20Astronomy.pdf), [odp](http://jake.ru.ac.za/~foster/nassp2016/lectures/3-PositionalAstronomy/Positional%20Astronomy.odp))
-3. April 5: Fourier Transforms Theory and the Visibility Space (part 1)
-4. April 7: Discrete Fourier Transforms and Practical Session
+3. April 5: Fourier Theory and Discrete Fourier Transforms
+4. April 7: Fourier Tutorial and Visibility Space (part 1)
 5. April 12: Visibility Space (part 2)
 6. April 14: Practical Session
 7. April 19: Imaging (part 1)
@@ -63,27 +63,30 @@ Lectures run from March 15 to May 20, 2016 from 2:00 - 4:00 (check the outline b
     3. [Horizontal Coordinates (ALT,AZ)](http://jake.ru.ac.za/~foster/nassp2016/3_Positional_Astronomy/3_3_Horizontal_Coordinates.html)
     4. [Direction Cosine Coordinates (l,m,n)](http://jake.ru.ac.za/~foster/nassp2016/3_Positional_Astronomy/3_4_Direction_Cosine_Coordinates.html)
     5. [Further Reading and References](http://jake.ru.ac.za/~foster/nassp2016/3_Positional_Astronomy/3_x_further_reading_and_references.html)
-4. Visibility Space
-    1. The Baseline and its representations in space
-    2. The 2-element Interferometer: a spatial filter
-    3. The Visibility Function
+4. [Visibility Space](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_0_introduction.html)
+    1. [The Baseline and its representations in space](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_1_The_Baseline.html)
+    2. [The 2-element Interferometer: a spatial filter](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_2_The_2-element_Interferometer.html)
+    3. [The Visibility Function](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_3_The_Visibility_Function.html)
     4. UV Coverage
-    5. The Fourier Approximation & Van Cittert-Zernike Theorem
-    6. Further Reading and References
-5. Imaging
-    1. Spatial Frequencies
-    2. Sampling and Point Spread Functions
-    3. Gridding and Degridding for using the FFT
-    4. The Dirty Image and Visibility Weightings
-    5. The Break Down of the Small Angle Approximation and the W-Term
-    6. Further Reading and References
-6. Deconvolution in Imaging
-    1. Sky Models
-    2. Point Source Assumption (CLEAN)
-    3. CLEAN Implementations
-    4. Residuals and Image Quality
+		1. [UV Tracks](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_4_1_UV_Coverage_UV_Tracks.html)
+		2. [Improving Coverage](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_4_2_UV_Coverage_Improving_Your_Coverage.html)
+    5. [The Fourier Approximation & Van Cittert-Zernike Theorem](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_5_The_Fourier_Approximation_VanCittert-Zernike_Theorem.html)
+    6. [Further Reading and References](http://jake.ru.ac.za/~foster/nassp2016/4_Visibility_Space/4_x_further_reading_and_references.html)
+5. [Imaging](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_0_introduction.html)
+    1. [Spatial Frequencies](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_1_spatial_frequencies.html)
+    2. [Sampling and Point Spread Functions](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_2_sampling_functions_and_psfs.html)
+    3. [Gridding and Degridding for using the FFT](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_3_gridding_and_degridding.html)
+    4. [The Dirty Image and Visibility Weightings](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_4_imaging_weights.html)
+    5. [The Break Down of the Small Angle Approximation and the W-Term](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_5_widefield_effect.html)
+    6. [Further Reading and References](http://jake.ru.ac.za/~foster/nassp2016/5_Imaging/5_x_further_reading_and_references.html)
+6. [Deconvolution in Imaging](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_0_introduction.html)
+    1. [Sky Models](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_1_sky_models.html)
+    2. [Interative Deconvolution with Point Sources (CLEAN)](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_2_clean.html)
+    3. [CLEAN Implementations](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_3_clean_flavours.html)
+		1. [Hogbom's Method](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/hogbom_clean.html)
+    4. [Residuals and Image Quality](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_4_residuals_and_iqa.html)
     5. Source Finding and Detection
-    6. Further Reading and References
+    6. [Further Reading and References](http://jake.ru.ac.za/~foster/nassp2016/6_Deconvolution/6_x_further_reading_and_references.html)
 7. Observing Systems
     1. Jones Notation
     2. The Measurement Equation (RIME)
@@ -106,7 +109,7 @@ Lectures run from March 15 to May 20, 2016 from 2:00 - 4:00 (check the outline b
 
 There are three assignments, only **two** are required.
 
-* Assignment 1: [Positional Astronomy and Visibility Space Problem Set](https://github.com/griffinfoster/fundamentals_of_interferometry/blob/master/4_Visibility_Space/4_problem_set.ipynb) (due April 14)
+* Assignment 1: [Positional Astronomy and Visibility Space Problem Set](https://github.com/griffinfoster/fundamentals_of_interferometry/blob/master/4_Visibility_Space/4_problem_set.ipynb) (due April 19)
 * Assignment 2: An implementation of CLEAN (due May 6)
 * Assignment 3: An implementation of StEfCal (due May 27)
 
@@ -128,25 +131,27 @@ For data reduction we will be using NRAO's [CASA](http://casa.nrao.edu/) softwar
 
 ## Contributors
 
-* Alexander Akoto-Danso
-* Marcellin Atemkeng
-* Landman Bester
-* Tariq Blecher
-* Roger Deane
-* Griffin Foster
-* Julien Girard
-* Trienko Grobler
-* Benna Hugo
-* Gyula (Josh) Jozsa
-* Ermias Abebe Kassaye
-* Jonathan Kenyon
-* Sphesihle Makhathini
-* Modhurita Mitra
-* Jared Norman
-* Ridhima Nunhokee
-* Simon Perkins
-* Laura Richter
-* Lerato Sebokolodi
-* Oleg Smirnov
-* UA Mbou Sob
-* Kshitij Thorat
+* Alexander Akoto-Danso (@akotodanso)
+* Marcellin Atemkeng (@atemkeng)
+* Landman Bester (@landmanbester)
+* Tariq Blecher (@TariqBlecher)
+* Roger Deane (@rdeane)
+* Griffin Foster (@griffinfoster)
+* Julien Girard (@JulienNGirard)
+* Trienko Grobler (@Trienko)
+* Benna Hugo (@bennahugo)
+* Gyula (Josh) Jozsa (@gigjozsa)
+* Ermias Abebe Kassaye (@Ermiasabebe)
+* Jonathan Kenyon (@JSKenyon)
+* Sphesihle Makhathini (@SpheMakh)
+* Modhurita Mitra (@modhurita)
+* Gijs Molenaar (@gijzelaerr)
+* Jared Norman (@jfunction)
+* Ridhima Nunhokee (@Chuneeta)
+* Simon Perkins (@sjperkins)
+* Laura Richter (@LauraRichter)
+* Lerato Sebokolodi (@Sebokolodi)
+* Oleg Smirnov (@o-smirnov)
+* Ulrich Mbou Sob (@ulricharmel)
+* Cyril Tasse (@cyriltasse)
+* Kshitij Thorat (@KshitijT)
